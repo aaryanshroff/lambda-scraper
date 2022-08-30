@@ -165,3 +165,6 @@ terraform.rc
 
 # Dependency zip files
 terraform/*.zip
+
+# macOS files
+.DS_Store
