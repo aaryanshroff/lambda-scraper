@@ -50,9 +50,9 @@ def lambda_handler(event, context) -> List[Post]:
     posts = [parse_raw_post(raw_post, raw_post_attribute)
              for raw_post, raw_post_attribute in zip(raw_posts, raw_post_attributes)]
 
-    for post in posts:
-        if post:
-            _ = db_client.put_item(TableName='bamboohousing', Item=post)
+    # for post in posts:
+    #     if post:
+    #         _ = db_client.put_item(TableName='bamboohousing', Item=post)
 
     return posts
 
